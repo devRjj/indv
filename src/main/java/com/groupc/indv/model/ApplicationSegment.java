@@ -1,8 +1,8 @@
 package com.groupc.indv.model;
 
-import com.groupc.indv.enums.CreditInquiryPurposeType;
-import com.groupc.indv.enums.CreditInquiryPurposeTypeDescription;
-import com.groupc.indv.enums.CreditInquiryStage;
+import com.groupc.indv.enums.CreditPurposeType;
+import com.groupc.indv.enums.CreditPurposeTypeDescription;
+import com.groupc.indv.enums.CreditStage;
 import com.groupc.indv.enums.CreditRequestType;
 
 public class ApplicationSegment {
@@ -15,11 +15,11 @@ public class ApplicationSegment {
 
 	private String creditRepetitionTransactionID;
 
-	private CreditInquiryPurposeType creditInquiryPurposeType;
+	private CreditPurposeType creditInquiryPurposeType;
 
-	private CreditInquiryPurposeTypeDescription creditInquiryPurposeTypeDescription;
+	private CreditPurposeTypeDescription creditInquiryPurposeTypeDescription;
 
-	private CreditInquiryStage creditInquiryStage;
+	private CreditStage creditInquiryStage;
 
 	private String creditRepetitionTransactionDateAndTime;
 

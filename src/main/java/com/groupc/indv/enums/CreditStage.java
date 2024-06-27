@@ -1,6 +1,6 @@
 package com.groupc.indv.enums;
 
-public enum CreditInquiryStage {
+public enum CreditStage {
     PRE_SCREEN("Pre-Screen"),
     PRE_DISB("Pre-Disbursement"),
     UW_REVIEW("Underwriting Review"),
@@ -9,7 +9,7 @@ public enum CreditInquiryStage {
 
     private final String description;
 
-    private CreditInquiryStage(String description) {
+    private CreditStage(String description) {
         this.description = description;
     }
 }
