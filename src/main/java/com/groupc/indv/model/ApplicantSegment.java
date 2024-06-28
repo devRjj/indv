@@ -1,13 +1,10 @@
 package com.groupc.indv.model;
 
-import com.groupc.indv.enums.IdsType;
-import com.groupc.indv.enums.RelationsType;
-
 public class ApplicantSegment {
 	
 	private Applicantname nameOfApplicant;
 	
-	private DOB dob;
+	private DateOfBirth dob;
 	
 	private Identity identity;
 	

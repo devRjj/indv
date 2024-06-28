@@ -1,6 +1,6 @@
 package com.groupc.indv.model;
 
-public class DOB {
+public class DateOfBirth {
 	
 	private String dobDate;
 
