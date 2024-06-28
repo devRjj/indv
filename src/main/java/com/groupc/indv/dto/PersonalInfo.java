@@ -1,9 +1,11 @@
 package com.groupc.indv.dto;
 
+import java.sql.Date;
+
 import com.groupc.indv.enums.Gender;
 import com.groupc.indv.enums.TelephoneType;
 import com.groupc.indv.model.Applicantname;
-import com.groupc.indv.model.DOB;
+import com.groupc.indv.model.DateOfBirth;
 import com.groupc.indv.model.Identity;
 import com.groupc.indv.model.KeyPersons;
 import com.groupc.indv.model.Nominee;
@@ -13,7 +15,7 @@ public class PersonalInfo {
 	
 	private Applicantname name;
 	
-	private DOB dob;
+	private DateOfBirth dob;
 	
 	private Identity idType;
 	private Identity idValue;
@@ -39,10 +41,10 @@ public class PersonalInfo {
 	public void setName(Applicantname name) {
 		this.name = name;
 	}
-	public DOB getDob() {
+	public DateOfBirth getDob() {
 		return dob;
 	}
-	public void setDob(DOB dob) {
+	public void setDob(DateOfBirth dob) {
 		this.dob = dob;
 	}
 	public Identity getIdType() {
