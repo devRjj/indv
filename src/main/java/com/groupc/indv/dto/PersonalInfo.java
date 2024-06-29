@@ -2,7 +2,7 @@ package com.groupc.indv.dto;
 
 import com.groupc.indv.enums.Gender;
 import com.groupc.indv.enums.TelephoneType;
-import com.groupc.indv.model.ApplicantName;
+import com.groupc.indv.model.Applicantname;
 import com.groupc.indv.model.DateOfBirth;
 import com.groupc.indv.model.Identity;
 import com.groupc.indv.model.KeyPersons;
@@ -11,7 +11,7 @@ import com.groupc.indv.model.Relations;
 
 public class PersonalInfo {
 
-    private ApplicantName name;
+    private Applicantname name;
     private DateOfBirth dob;
 
     private Identity idType;
@@ -32,11 +32,11 @@ public class PersonalInfo {
     private Gender gender;
     private String email;
 
-    public ApplicantName getName() {
+    public Applicantname getName() {
         return name;
     }
 
-    public void setName(ApplicantName name) {
+    public void setName(Applicantname name) {
         this.name = name;
     }
 

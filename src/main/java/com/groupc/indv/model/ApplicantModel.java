@@ -11,8 +11,8 @@ public class ApplicantModel {
     private Long id;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "name_id", referencedColumnName = "id")
-    private ApplicantName nameOfApplicant;
+    @JoinColumn(name = "name_id", referencedColumnName = "applicantId")
+    private Applicantname nameOfApplicant;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "dob_id", referencedColumnName = "id")
@@ -40,5 +40,75 @@ public class ApplicantModel {
 
     private String email;
 
-    // Getters and setters
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Applicantname getNameOfApplicant() {
+		return nameOfApplicant;
+	}
+
+	public void setNameOfApplicant(Applicantname nameOfApplicant) {
+		this.nameOfApplicant = nameOfApplicant;
+	}
+
+	public DateOfBirth getDob() {
+		return dob;
+	}
+
+	public void setDob(DateOfBirth dob) {
+		this.dob = dob;
+	}
+
+	public Identity getIdentity() {
+		return identity;
+	}
+
+	public void setIdentity(Identity identity) {
+		this.identity = identity;
+	}
+
+	public Relations getRelativeInformation() {
+		return relativeInformation;
+	}
+
+	public void setRelativeInformation(Relations relativeInformation) {
+		this.relativeInformation = relativeInformation;
+	}
+
+	public KeyPersons getKeyperson() {
+		return keyperson;
+	}
+
+	public void setKeyperson(KeyPersons keyperson) {
+		this.keyperson = keyperson;
+	}
+
+	public Nominee getNominee() {
+		return nominee;
+	}
+
+	public void setNominee(Nominee nominee) {
+		this.nominee = nominee;
+	}
+
+	public Contacts getContactDetails() {
+		return contactDetails;
+	}
+
+	public void setContactDetails(Contacts contactDetails) {
+		this.contactDetails = contactDetails;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
 }

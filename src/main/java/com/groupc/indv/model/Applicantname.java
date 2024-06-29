@@ -1,8 +1,14 @@
 package com.groupc.indv.model;
 
-public class ApplicantName {
-	
-	private Long applicantId;
+import javax.persistence.*;
+
+@Entity
+@Table(name = "applicant_name")
+public class Applicantname {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long applicantId;
 	
 	private String firstname;
 	private String lastname;
