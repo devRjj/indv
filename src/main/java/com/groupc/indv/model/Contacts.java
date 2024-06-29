@@ -1,12 +1,21 @@
 package com.groupc.indv.model;
 
+import javax.persistence.*;
+
 import com.groupc.indv.enums.TelephoneType;
 
+@Entity
+@Table(name = "contacts")
 public class Contacts {
-	
-	private TelephoneType typeOfNumber;
-	
-	private String number;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Enumerated(EnumType.STRING)
+    private TelephoneType typeOfNumber;
+
+    private String number;
 
 	public TelephoneType getTypeOfNumber() {
 		return typeOfNumber;
@@ -23,6 +32,4 @@ public class Contacts {
 	public void setNumber(String number) {
 		this.number = number;
 	}
-	
-
 }
