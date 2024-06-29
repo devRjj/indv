@@ -5,7 +5,6 @@ import com.groupc.indv.model.ApplicationModel;
 
 public class ApplicationConverter {
 
-    // Convert ApplicationDto to ApplicationModel
     public static ApplicationModel toModel(ApplicationDto dto) {
         ApplicationModel model = new ApplicationModel();
         
@@ -26,7 +25,6 @@ public class ApplicationConverter {
         return model;
     }
 
-    // Convert ApplicationModel to ApplicationDto
     public static ApplicationDto toDto(ApplicationModel model) {
         ApplicationDto dto = new ApplicationDto();
         

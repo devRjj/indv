@@ -9,6 +9,8 @@ public class AddressDetails {
     private String city;
     private StateCode state;
     private String pincode;
+    
+    public AddressDetails() { }
 
     public AddressDetails(AddressType addressType, String address, String city, StateCode state, String pincode) {
         this.addressType = addressType;
@@ -17,7 +19,7 @@ public class AddressDetails {
         this.state = state;
         this.pincode = pincode;
     }
-
+    
     public AddressType getAddressType() {
         return addressType;
     }
@@ -56,16 +58,5 @@ public class AddressDetails {
 
     public void setPincode(String pincode) {
         this.pincode = pincode;
-    }
-
-    @Override
-    public String toString() {
-        return "AddressDetails{" +
-                "addressType=" + addressType +
-                ", address='" + address + '\'' +
-                ", city='" + city + '\'' +
-                ", state=" + state +
-                ", pincode='" + pincode + '\'' +
-                '}';
     }
 }

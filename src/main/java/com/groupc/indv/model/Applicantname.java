@@ -1,12 +1,15 @@
 package com.groupc.indv.model;
 
-public class Applicantname {
+public class ApplicantName {
+	
+	private Long applicantId;
 	
 	private String firstname;
 	private String lastname;
 	private String middlename;
 	private String aliasName1;
 	private String aliasName2;
+	
 	public String getFirstname() {
 		return firstname;
 	}

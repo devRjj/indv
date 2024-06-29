@@ -1,13 +1,19 @@
 package com.groupc.indv.model;
 
-public class DateOfBirth {
-	
-	private String dobDate;
+import javax.persistence.*;
 
-	private String age;
-	
-	private String ageAsOn;
-	
+@Entity
+@Table(name = "date_of_birth")
+public class DateOfBirth {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String dobDate;
+    private String age;
+    private String ageAsOn;
+
 	public String getDobDate() {
 		return dobDate;
 	}
