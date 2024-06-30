@@ -3,6 +3,6 @@ package com.groupc.indv.dto;
 public class InquiryRequest {
 	
 	private ApplicationDto application;
-	private DemographicInformation demographicInfo;
+	private DemographicInformationDto demographicInfo;
 
 }

@@ -1,15 +1,29 @@
 package com.groupc.indv.model;
 
+import javax.persistence.*;
+
 import com.groupc.indv.enums.AddressType;
 import com.groupc.indv.enums.StateCode;
 
+@Entity
+@Table(name = "address_details")
 public class AddressDetails {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Enumerated(EnumType.STRING)
     private AddressType addressType;
+
     private String address;
     private String city;
+
+    @Enumerated(EnumType.STRING)
     private StateCode state;
+
     private String pincode;
-    
+
     public AddressDetails() { }
 
     public AddressDetails(AddressType addressType, String address, String city, StateCode state, String pincode) {
